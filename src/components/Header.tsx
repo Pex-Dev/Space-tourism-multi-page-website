@@ -17,6 +17,7 @@ export default function Header() {
         <hr className="hidden lg:block lg:w-full mr-[680px] text-white/25 z-30" />
       </div>
       <button
+        type="button"
         aria-expanded={isOpen}
         aria-label="Menu"
         onClick={() => setIsOpen(!isOpen)}
@@ -33,7 +34,7 @@ export default function Header() {
           isOpen ? "translate-x-0" : "translate-x-full"
         } md:items-center md:translate-x-0 md:w-[640px] md:min-h-auto md:h-24 md:max-h-24 md:px-10 md:justify-end lg:w-[736px]  lg:mt-10`}
       >
-        <header className="flex justify-end py-8 pr-6 md:hidden">
+        <div className="flex justify-end py-8 pr-6 md:hidden">
           <button
             onClick={() => setIsOpen(false)}
             aria-label="Close menu"
@@ -42,7 +43,7 @@ export default function Header() {
           >
             <img src={iconClose} alt="Close" />
           </button>
-        </header>
+        </div>
         <nav className="flex flex-col md:flex-row gap-8 md:h-full ">
           <div
             className={`flex items-center md:justify-center transition-colors duration-800 border-r-[3px] border-transparent  md:border-r-0 md:border-b-[3px]  ${
