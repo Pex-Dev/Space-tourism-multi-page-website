@@ -37,6 +37,7 @@ export default function Header() {
         <div className="flex justify-end py-8 pr-6 md:hidden">
           <button
             onClick={() => setIsOpen(false)}
+            type="button"
             aria-label="Close menu"
             className="cursor-pointer focus-visible:bg-white/10 focus:outline-none"
             tabIndex={!isOpen ? -1 : 0}
