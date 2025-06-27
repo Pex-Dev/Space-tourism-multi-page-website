@@ -1,0 +1,129 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Bellefair Regular";
+  src: url("/fonts/Bellefair-Regular.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Barlow Condensed";
+  src: url("/fonts/BarlowCondensed-Regular.ttf") format("truetype");
+  font-style: normal;
+}
+@font-face {
+  font-family: "Barlow";
+  src: url("/fonts/Barlow-Regular.ttf") format("truetype");
+  font-style: normal;
+}
+
+@theme {
+  --font-barlow: "Barlow", "sans-serif";
+  --font-barlow-condensed: "Barlow Condensed", "sans-serif";
+  --font-bellefair: "Bellefair Regular", "sans-serif";
+  --animate-rotate: spin 400s linear infinite;
+}
+
+body {
+  background-color: #0d0f19;
+}
+
+@utility bg-home-desktop {
+  background-image: url("/images/home/background-home-desktop.jpg");
+  background-size: cover;
+  background-position: center;
+}
+@utility bg-home-mobile {
+  background-image: url("/images/home/background-home-mobile.jpg");
+  background-size: cover;
+  background-position: center;
+}
+@utility bg-home-tablet {
+  background-image: url("/images/home/background-home-tablet.jpg");
+  background-size: cover;
+  background-position: center;
+}
+@utility bg-destination-desktop {
+  background-image: url("/images/destination/background-destination-desktop.jpg");
+  background-size: cover;
+  background-position: center;
+}
+@utility bg-destination-mobile {
+  background-image: url("/images/destination/background-destination-mobile.jpg");
+  background-size: cover;
+  background-position: center;
+}
+@utility bg-destination-tablet {
+  background-image: url("/images/destination/background-destination-tablet.jpg");
+  background-size: cover;
+  background-position: center;
+}
+@utility bg-crew-desktop {
+  background-image: url("/images/crew/background-crew-desktop.jpg");
+  background-size: cover;
+  background-position: center;
+}
+@utility bg-crew-mobile {
+  background-image: url("/images/crew/background-crew-mobile.jpg");
+  background-size: cover;
+  background-position: center;
+}
+@utility bg-crew-tablet {
+  background-image: url("/images/crew/background-crew-tablet.jpg");
+  background-size: cover;
+  background-position: center;
+}
+@utility bg-technology-desktop {
+  background-image: url("/images/technology/background-technology-desktop.jpg");
+  background-size: cover;
+  background-position: center;
+}
+@utility bg-technology-mobile {
+  background-image: url("/images/technology/background-technology-mobile.jpg");
+  background-size: cover;
+  background-position: center;
+}
+@utility bg-technology-tablet {
+  background-image: url("/images/technology/background-technology-tablet.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+@utility shadow-inner-md {
+  box-shadow: -68px -37px 103px 14px rgba(0, 0, 0, 1) inset;
+  -webkit-box-shadow: -68px -37px 103px 14px rgba(0, 0, 0, 1) inset;
+  -moz-box-shadow: -68px -37px 103px 14px rgba(0, 0, 0, 1) inset;
+}
+
+@utility shadow-inner-sm {
+  box-shadow: -19px -21px 36px 16px rgba(0, 0, 0, 0.86) inset;
+  -webkit-box-shadow: -19px -21px 36px 16px rgba(0, 0, 0, 0.86) inset;
+  -moz-box-shadow: -19px -21px 36px 16px rgba(0, 0, 0, 0.86) inset;
+}
+
+@utility image-gradient {
+  mask-image: linear-gradient(0deg, transparent 0%, black 30%);
+}
+
+.fadeIn {
+  animation: fadeIn 0.3s ease-in-out;
+}
+.fadeOut {
+  animation: fadeOut 1s ease-in-out;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
