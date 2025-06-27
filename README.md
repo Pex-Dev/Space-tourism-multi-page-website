@@ -38,9 +38,9 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [space turism solution](https://www.frontendmentor.io/solutions/space-tourism-multi-page-website-solution--YYz69om1A)
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [space-turism](https://space-turism-pex-dev.netlify.app/)
 
 ## My process
 
